@@ -1,5 +1,7 @@
 package ru.clevertec.courses.task_reviewer.service.impl;
 
+import static ru.clevertec.courses.task_reviewer.constant.Constant.DOT;
+
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
@@ -15,8 +17,6 @@ import ru.clevertec.courses.task_reviewer.parser.FileParser;
 import ru.clevertec.courses.task_reviewer.processor.CheckingProcessorChain;
 import ru.clevertec.courses.task_reviewer.repository.CommandLineRepository;
 import ru.clevertec.courses.task_reviewer.service.TaskReviewerService;
-
-import static ru.clevertec.courses.task_reviewer.constant.Constant.DOT;
 
 import java.io.File;
 import java.util.Arrays;
@@ -64,8 +64,7 @@ public class TaskReviewerServiceImpl implements TaskReviewerService {
 
         checkingProcessorChain.runChain(taskDto);
 
-        //TODO отправка письма со следующим заданием?
-        //TODO разбить exceptions на более специфичекие
+       //TODO разбить exceptions на более специфичекие
     }
 
     private static String substringToDot(File file) {

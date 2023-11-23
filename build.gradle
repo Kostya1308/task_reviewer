@@ -9,7 +9,7 @@ group = 'ru.clevertec.courses'
 version = '0.0.1-SNAPSHOT'
 
 compileJava {
-	sourceCompatibility = '21'
+	sourceCompatibility = '17'
 	options.compilerArgs = [
 			'-Amapstruct.defaultComponentModel=spring'
 	]

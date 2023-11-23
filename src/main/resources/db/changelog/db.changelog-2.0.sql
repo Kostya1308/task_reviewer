@@ -2,10 +2,10 @@
 
 --changeset knpiskunov:fill_correct_result_table
 INSERT INTO correct_result(result_path)
-VALUES ('classpath:correct_results/1.csv');
+VALUES ('classpath:correct.results/1.csv');
 
 INSERT INTO correct_result(result_path)
-VALUES ('classpath:correct_results/2.csv');
+VALUES ('classpath:correct.results/2.csv');
 
 --changeset knpiskunov:fill_command_line_table
 INSERT INTO command_line(command_line_args, correct_result_id)

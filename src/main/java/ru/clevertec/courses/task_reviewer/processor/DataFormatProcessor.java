@@ -27,8 +27,6 @@ public class DataFormatProcessor extends AbstractCheckingProcessor {
     private static final String INCORRECT_TIME_FORMAT_MESSAGE = "Формат времени некорректный";
     private static final String INCORRECT_DATA_FORMAT_MESSAGE = "Формат денежных значений некорректный";
 
-
-
     @Override
     public void check(TaskDto taskDto) {
         Map<Integer, ReceiptDto> receiptDtoToReviewMap = taskDto.getReceiptDtoToReviewMap();
